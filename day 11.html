@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Codegram Login</title>
+    <style>
+      body {
+        background-color: #c43c87;
+        font-family:cursive ;
+      }
+
+      form {
+        background-color: #fff;
+        border: 10px solid #ab79d4;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(14, 13, 14, 0.1);
+        margin: 0 auto;
+        max-width: 400px;
+        padding: 20px;
+      }
+
+      label, input {
+        display:flow-root; ;
+        margin-bottom: 10px;
+      }
+
+      input[type="text"], input[type="password"] {
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+        font-size: 16px;
+        padding: 9px;
+        width: 100%;
+      }
+
+      input[type="submit"] {
+        background-color: #f038c8;
+        border: 1px solid #7b25c2;
+        border-radius: 3px;
+        color: #e4e4e8;
+        font-size: 16px;
+        margin-top: 10px;
+        padding: 10px;
+        width: 100%;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #38a1f0;
+        cursor: pointer;
+      }
+
+      .span-or {
+        background-color: #fafafa;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 600;
+        margin: 20px 0;
+        padding: 0 10px;
+        position: relative;
+        top: -14px;
+        z-index: 1;
+      }
+
+      .hr-or {
+        background-color: #7b25c2;
+        height: 1px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .div-or {
+        display: flex;
+        align-items: center;
+        text-align: center;
+      }
+
+      .div-or > div {
+        flex-grow: 1;
+        height: 1px;
+        background-color: #ddd;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      .div-signup {
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      .div-signup > a {
+        color: #3897f0;
+        font-weight: 600;
+        text-decoration: pink;
+      }
+
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <hr>
+      <h1>Codegram Login</h1>
+      <form>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your code name" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <input type="submit" value="Log In">
+        <div class="div-signup">
+          <p>Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+        <hr class="hr-or"><span class="span-or">Connect with other coders...</span></hr>
+      </form>
+
+
